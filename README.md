@@ -1,4 +1,4 @@
-# colorful
+# colorful [![Build Status](https://travis-ci.org/a11n/colorful.svg?branch=master)](https://travis-ci.org/a11n/colorful) [![Coverage Status](https://coveralls.io/repos/a11n/colorful/badge.svg)](https://coveralls.io/r/a11n/colorful)
 A lightweight library to color System.out.
 
 ## Principle
