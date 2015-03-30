@@ -26,11 +26,11 @@ public class AnsiColorTest {
     assertThat(AnsiColor.valueOf("BLUE")).isEqualTo(AnsiColor.BLUE);
     assertThat(AnsiColor.valueOf("MAGENTA")).isEqualTo(AnsiColor.MAGENTA);
     assertThat(AnsiColor.valueOf("CYAN")).isEqualTo(AnsiColor.CYAN);
-    assertThat(AnsiColor.valueOf("WHIT")).isEqualTo(AnsiColor.WHITE);
+    assertThat(AnsiColor.valueOf("WHITE")).isEqualTo(AnsiColor.WHITE);
   }
 
   @Test
-  public void testApplyto() throws Exception {
+  public void testApplyTo() throws Exception {
     String actual = AnsiColor.BLACK.applyTo(STRING);
 
     String expected = String.format(AnsiColor.ESCAPE_CODE_PATTERN, "30")
