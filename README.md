@@ -12,3 +12,5 @@ A lightweight library to color System.out.
 System.out.println(AnsiColor.RED.applyTo("red"));
 System.out.println(AnsiColor.GREEN.applyTo("green"));
 ```
+
+See [Javadoc](http://a11n.github.io/colorful/javadoc/) for further information.
