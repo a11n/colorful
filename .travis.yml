@@ -4,7 +4,12 @@ jdk:
   - oraclejdk8
 
 after_success:
-  - gradle jacocoTestReport coveralls
+  - gradle jacocoTestReport coveralls javadoc
+  - .travis/push-javadoc-to-gh-pages.sh
+  
+env:
+  global:
+    - secure: "RkBGU6df9lMACGN38aYZ4VlppKeJ9sqAe7/GWkR/xJu1gJc5IvHTlxxZQ3iA5R64P1vDk29gjtumB1CumzLQpJO8z1bcn8XP6ja98VG3Ij1Z/oTg0UgNbPwlnAwvAKylYswM1IUIsfUTZVbYts7sHx9+0S1ttNxoxvQNkHk9eaU="
 
 branches:
   except:
