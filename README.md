@@ -7,7 +7,7 @@ A lightweight library for colored console output in Java.
 **Note:** ANSI escape codes are not supported by every terminal/console.
 
 ## Usage
-Here is how to color `System.out`in Java.
+Here is how to color `System.out` in Java.
 ```java
 System.out.println(AnsiColor.RED.applyTo("red"));
 System.out.println(AnsiColor.GREEN.applyTo("green"));
